@@ -1,6 +1,6 @@
 # KTC Testing Series
 
-This repository is a companion of the Know the Code Testing Series for labs:
+This repository is a companion of the [Know the Code Testing Series](https://knowthecode.io/series/unit-integration-testing-series) for labs:
 
 - [Unit & Integration Testing Basics](https://knowthecode.io/labs/unit-integration-testing-basics)
 - [Unit Testing with Brain Monkey](https://knowthecode.io/labs/unit-testing-brain-monkey)
