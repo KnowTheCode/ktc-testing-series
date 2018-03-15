@@ -1,0 +1,39 @@
+{
+  "name": "knowthecode/ktc-testing-series",
+  "description": "Testing Series Beans Framework.",
+  "type": "wordpress-theme",
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/KnowTheCode/ktc-testing-series",
+  "support": {
+    "issues": "https://github.com/KnowTheCode/ktc-testing-series/issues",
+    "source": "https://github.com/KnowTheCode/ktc-testing-series"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "exclude-from-classmap": [
+      "/tests/"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Beans\\Framework\\Tests\\Unit\\": "tests/phpunit/unit/",
+      "Beans\\Framework\\Tests\\Integration\\": "tests/phpunit/integration/"
+    }
+  },
+  "require": {
+    "php": "^5.2|^7"
+  },
+  "require-dev": {
+    "php": "^5.6|^7",
+    "brain/monkey": "^2.2",
+    "phpunit/phpunit": "~5.7.9"
+  },
+  "config": {
+    "sort-order": true
+  },
+  "scripts": {
+    "test-unit": "\"vendor/bin/phpunit\" --testsuite unit --color=always",
+    "test-integration": "\"vendor/bin/phpunit\" --testsuite integration --configuration tests/phpunit/integration/phpunit.xml.dist --color=always"
+  }
+}
